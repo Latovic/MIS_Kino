@@ -24,6 +24,7 @@ namespace Kino_UI
 
         private void Frm_Klijenti_Load(object sender, EventArgs e)
         {
+            //Poziv funkcije
             Trazi(null,null);
 
             DAKlijenti.GetAllOpcine(dsKlijenti.Opcine);

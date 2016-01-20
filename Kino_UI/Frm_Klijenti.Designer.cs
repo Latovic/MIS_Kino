@@ -239,7 +239,7 @@
             // 
             this.lblKlijenti.AutoSize = true;
             this.lblKlijenti.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblKlijenti.Location = new System.Drawing.Point(295, 9);
+            this.lblKlijenti.Location = new System.Drawing.Point(331, 9);
             this.lblKlijenti.Name = "lblKlijenti";
             this.lblKlijenti.Size = new System.Drawing.Size(57, 17);
             this.lblKlijenti.TabIndex = 13;
