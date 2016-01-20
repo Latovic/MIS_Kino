@@ -41,8 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
+    <Compile Include="DAKarte.cs" />
+    <Compile Include="DAKategorije.cs" />
     <Compile Include="DAKlijenti.cs" />
+    <Compile Include="DAProizvodi.cs" />
+    <Compile Include="DARacuni.cs" />
     <Compile Include="DARezervacije.cs" />
+    <Compile Include="DAStavkeRacuna.cs" />
     <Compile Include="DSKlijenti.cs">
       <DependentUpon>DSKlijenti.xsd</DependentUpon>
     </Compile>
