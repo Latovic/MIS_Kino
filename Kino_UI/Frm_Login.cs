@@ -29,21 +29,26 @@ namespace Kino_UI
 
                 if (menadzer != 0)
                 {
-                    this.DialogResult = DialogResult.OK;                         
-                }                
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();                       
+                } 
+                else
+                {
+                    lbl_error.Visible = true;
+                }               
             }
             else
             {
                 lbl_error.Visible = true;
             } 
             
-            if(this.DialogResult == DialogResult.OK)
-            {
+            //if(this.DialogResult == DialogResult.OK)
+            //{
                
-                Frm_Main frm = new Frm_Main();
-                frm.ShowDialog();
+            //    Frm_Main frm = new Frm_Main();
+            //    frm.ShowDialog();
                 
-            }          
+            //}          
             
         }
 

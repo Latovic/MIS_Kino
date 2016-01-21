@@ -19,7 +19,7 @@ namespace Kino_UI
             Frm_Login fLogin = new Frm_Login();
             if(fLogin.ShowDialog()==DialogResult.OK)
             {
-                Application.Run(new Frm_Login());
+                Application.Run(new Frm_Main());
             }
         }
     }
