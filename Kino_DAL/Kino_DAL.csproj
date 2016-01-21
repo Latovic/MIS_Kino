@@ -56,14 +56,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSKlijenti.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DSProizvodi.cs">
-      <DependentUpon>DSProizvodi.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DSProizvodi.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DSProizvodi.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DSRezervacije.cs">
       <DependentUpon>DSRezervacije.xsd</DependentUpon>
     </Compile>
@@ -91,17 +83,6 @@
     </None>
     <None Include="DSKlijenti.xss">
       <DependentUpon>DSKlijenti.xsd</DependentUpon>
-    </None>
-    <None Include="DSProizvodi.xsc">
-      <DependentUpon>DSProizvodi.xsd</DependentUpon>
-    </None>
-    <None Include="DSProizvodi.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSProizvodi.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DSProizvodi.xss">
-      <DependentUpon>DSProizvodi.xsd</DependentUpon>
     </None>
     <None Include="DSRezervacije.xsc">
       <DependentUpon>DSRezervacije.xsd</DependentUpon>
