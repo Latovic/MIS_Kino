@@ -42,7 +42,7 @@ namespace Kino_UI
         {
             int kategorijaID = Convert.ToInt32(dgKategorije.SelectedRows[0].Cells[0].Value);
             Frm_Proizvodi frm = new Frm_Proizvodi(kategorijaID);
-            frm.Show();
+            frm.ShowDialog();
         }
 
         private void txtProizvodNaziv_TextChanged(object sender, EventArgs e)
@@ -54,13 +54,13 @@ namespace Kino_UI
         {
             int kategorijaID = Convert.ToInt32(dgKategorije.SelectedRows[0].Cells[0].Value);
             Frm_Proizvodi frm = new Frm_Proizvodi(kategorijaID);
-            frm.Show();
+            frm.ShowDialog();
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
             Reports.Frm_KategorijeReport frm = new Reports.Frm_KategorijeReport(dsKategorije.KategorijeProizvoda);
-            frm.Show();
+            frm.ShowDialog();
         }
     }
 }

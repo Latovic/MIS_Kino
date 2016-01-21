@@ -49,7 +49,7 @@ namespace Kino_UI
         private void btnPrint_Click(object sender, EventArgs e)
         {
             Reports.Frm_StavkeRacunaReport frm = new Reports.Frm_StavkeRacunaReport(dsStavke.StavkeIzlaza);
-            frm.Show();
+            frm.ShowDialog();
         }
     }
 }

@@ -92,7 +92,7 @@ namespace Kino_UI
         private void btnPrint_Click(object sender, EventArgs e)
         {
             Reports.Frm_ProizvodiReport frm = new Reports.Frm_ProizvodiReport(dsProizvodi.Proizvodi);
-            frm.Show();
+            frm.ShowDialog();
         }
     }
 }

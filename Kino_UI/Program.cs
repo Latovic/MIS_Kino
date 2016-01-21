@@ -16,7 +16,11 @@ namespace Kino_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Login());
+            Frm_Login fLogin = new Frm_Login();
+            if(fLogin.ShowDialog()==DialogResult.OK)
+            {
+                Application.Run(new Frm_Login());
+            }
         }
     }
 }

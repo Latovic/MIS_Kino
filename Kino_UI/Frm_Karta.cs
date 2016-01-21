@@ -79,7 +79,7 @@ namespace Kino_UI
         private void btnPrint_Click(object sender, EventArgs e)
         {
             Reports.Frm_KarteReport frm = new Reports.Frm_KarteReport(dsKarte.Karte);
-            frm.Show();
+            frm.ShowDialog();
         }
     }
 }

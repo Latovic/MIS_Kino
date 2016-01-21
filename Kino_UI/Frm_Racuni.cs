@@ -64,20 +64,20 @@ namespace Kino_UI
         {
             int izlazID = Convert.ToInt32(dgRacuni.SelectedRows[0].Cells[0].Value);
             Frm_StavkeRacuna frm = new Frm_StavkeRacuna(izlazID);
-            frm.Show();
+            frm.ShowDialog();
         }
 
         private void dgRacuni_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int izlazID = Convert.ToInt32(dgRacuni.SelectedRows[0].Cells[0].Value);
             Frm_StavkeRacuna frm = new Frm_StavkeRacuna(izlazID);
-            frm.Show();
+            frm.ShowDialog();
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
         {
             Reports.Frm_RacuniReport frm = new Reports.Frm_RacuniReport(dsRacuni.IzlaziRobe);
-            frm.Show();
+            frm.ShowDialog();
         }
     }
 }
