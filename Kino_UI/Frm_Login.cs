@@ -29,17 +29,27 @@ namespace Kino_UI
 
                 if (menadzer != 0)
                 {
-                    //this.DialogResult = DialogResult.OK;
-                    //this.Close();
-                    Frm_Main frm = new Frm_Main();
-                    frm.Show();
+                    this.DialogResult = DialogResult.OK;                         
                 }                
             }
             else
             {
                 lbl_error.Visible = true;
-            }           
+            } 
             
+            if(this.DialogResult == DialogResult.OK)
+            {
+               
+                Frm_Main frm = new Frm_Main();
+                frm.ShowDialog();
+                
+            }          
+            
+        }
+
+        private void Frm_Login_Enter(object sender, EventArgs e)
+        {
+            btnLogin_Click(null,null);
         }
     }
 }

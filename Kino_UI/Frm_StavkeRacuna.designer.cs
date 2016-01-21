@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_StavkeRacuna));
             this.dgStavkeRacuna = new System.Windows.Forms.DataGridView();
             this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sifra = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -171,6 +172,7 @@
             this.Controls.Add(this.lblBrojStavki);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgStavkeRacuna);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_StavkeRacuna";
             this.Text = "Stavke računa";
             this.Load += new System.EventHandler(this.Frm_Racun_Load);

@@ -100,9 +100,10 @@
             // 
             // Frm_Login
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 159);
+            this.ClientSize = new System.Drawing.Size(284, 189);
             this.Controls.Add(this.lbl_error);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtLozinka);
@@ -110,9 +111,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblUsername);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frm_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Enter += new System.EventHandler(this.Frm_Login_Enter);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Proizvodi));
             this.dgProizvodi = new System.Windows.Forms.DataGridView();
             this.KategorijaProizvodaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -294,6 +295,7 @@
             this.Controls.Add(this.lblIme);
             this.Controls.Add(this.txtNaziv);
             this.Controls.Add(this.dgProizvodi);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Proizvodi";
             this.Text = "Proizvodi";
             this.Load += new System.EventHandler(this.Frm_Proizvodi_Load);
