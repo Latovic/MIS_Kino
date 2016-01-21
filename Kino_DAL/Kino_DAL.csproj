@@ -44,6 +44,7 @@
     <Compile Include="DAKarte.cs" />
     <Compile Include="DAKategorije.cs" />
     <Compile Include="DAKlijenti.cs" />
+    <Compile Include="DAMenadzeri.cs" />
     <Compile Include="DAProizvodi.cs" />
     <Compile Include="DARacuni.cs" />
     <Compile Include="DARezervacije.cs" />
@@ -65,6 +66,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSKlijenti.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSMenadzeri.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMenadzeri.xsd</DependentUpon>
     </Compile>
     <Compile Include="DSProizvodi.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -130,6 +136,17 @@
     </None>
     <None Include="DSKlijenti.xss">
       <DependentUpon>DSKlijenti.xsd</DependentUpon>
+    </None>
+    <None Include="DSMenadzeri.xsc">
+      <DependentUpon>DSMenadzeri.xsd</DependentUpon>
+    </None>
+    <None Include="DSMenadzeri.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMenadzeri.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSMenadzeri.xss">
+      <DependentUpon>DSMenadzeri.xsd</DependentUpon>
     </None>
     <None Include="DSProizvodi.xsc">
       <DependentUpon>DSProizvodi.xsd</DependentUpon>

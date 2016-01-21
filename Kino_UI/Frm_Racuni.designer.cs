@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Racuni));
             this.dgRacuni = new System.Windows.Forms.DataGridView();
             this.IzlazRobeId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -240,7 +241,9 @@
             this.Controls.Add(this.lbl_BrojRacuna);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgRacuni);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Racuni";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Racuni";
             this.Load += new System.EventHandler(this.Frm_Racuni_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgRacuni)).EndInit();

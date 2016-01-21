@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Karta));
             this.dgKarte = new System.Windows.Forms.DataGridView();
             this.imePrezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imePrezimeKlijenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -190,7 +191,7 @@
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // Frm_Karte
+            // Frm_Karta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -204,7 +205,9 @@
             this.Controls.Add(this.lbl_BrojKarti);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgKarte);
-            this.Name = "Frm_Karte";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Frm_Karta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Karte";
             this.Load += new System.EventHandler(this.Frm_Karte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgKarte)).EndInit();

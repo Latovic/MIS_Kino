@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Kategorije));
             this.dgKategorije = new System.Windows.Forms.DataGridView();
             this.KategorijaProizvodaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -176,7 +177,9 @@
             this.Controls.Add(this.lblBrojKategorija);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgKategorije);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Kategorije";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kategorije";
             this.Load += new System.EventHandler(this.Frm_Kategorije_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgKategorije)).EndInit();

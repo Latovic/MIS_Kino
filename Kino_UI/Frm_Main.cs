@@ -67,5 +67,17 @@ namespace Kino_UI
             Frm_Karta frm = new Frm_Karta();
             frm.ShowDialog();
         }
+
+        private void btnKlijenti2_Click(object sender, EventArgs e)
+        {
+            Frm_Klijenti frm = new Frm_Klijenti();
+            frm.ShowDialog();
+        }
+
+        private void btnRezervacije2_Click(object sender, EventArgs e)
+        {
+            Frm_Rezervacije frm = new Frm_Rezervacije();
+            frm.ShowDialog();
+        }
     }
 }

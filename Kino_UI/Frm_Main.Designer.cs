@@ -29,45 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Main));
-            this.btnKlijenti = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnInfo = new System.Windows.Forms.Button();
             this.btnKategorije = new System.Windows.Forms.Button();
             this.btnRacuni = new System.Windows.Forms.Button();
             this.btnKarte = new System.Windows.Forms.Button();
+            this.btnKlijenti2 = new System.Windows.Forms.Button();
+            this.btnRezervacije2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnKlijenti
-            // 
-            this.btnKlijenti.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnKlijenti.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnKlijenti.BackgroundImage")));
-            this.btnKlijenti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKlijenti.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
-            this.btnKlijenti.FlatAppearance.BorderSize = 0;
-            this.btnKlijenti.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKlijenti.Location = new System.Drawing.Point(12, 12);
-            this.btnKlijenti.Name = "btnKlijenti";
-            this.btnKlijenti.Size = new System.Drawing.Size(120, 37);
-            this.btnKlijenti.TabIndex = 3;
-            this.btnKlijenti.TabStop = false;
-            this.btnKlijenti.UseVisualStyleBackColor = false;
-            this.btnKlijenti.Click += new System.EventHandler(this.btnKlijenti_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 67);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 36);
-            this.button1.TabIndex = 5;
-            this.button1.TabStop = false;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnInfo
             // 
@@ -76,9 +44,9 @@
             this.btnInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnInfo.FlatAppearance.BorderSize = 0;
             this.btnInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInfo.Location = new System.Drawing.Point(232, 227);
+            this.btnInfo.Location = new System.Drawing.Point(226, 138);
             this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(75, 32);
+            this.btnInfo.Size = new System.Drawing.Size(54, 23);
             this.btnInfo.TabIndex = 8;
             this.btnInfo.TabStop = false;
             this.btnInfo.UseVisualStyleBackColor = false;
@@ -91,7 +59,8 @@
             this.btnKategorije.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
             this.btnKategorije.FlatAppearance.BorderSize = 0;
             this.btnKategorije.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKategorije.Location = new System.Drawing.Point(12, 121);
+            this.btnKategorije.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnKategorije.Location = new System.Drawing.Point(160, 96);
             this.btnKategorije.Name = "btnKategorije";
             this.btnKategorije.Size = new System.Drawing.Size(120, 36);
             this.btnKategorije.TabIndex = 10;
@@ -107,7 +76,8 @@
             this.btnRacuni.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
             this.btnRacuni.FlatAppearance.BorderSize = 0;
             this.btnRacuni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRacuni.Location = new System.Drawing.Point(12, 174);
+            this.btnRacuni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnRacuni.Location = new System.Drawing.Point(160, 12);
             this.btnRacuni.Name = "btnRacuni";
             this.btnRacuni.Size = new System.Drawing.Size(120, 36);
             this.btnRacuni.TabIndex = 11;
@@ -123,7 +93,8 @@
             this.btnKarte.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
             this.btnKarte.FlatAppearance.BorderSize = 0;
             this.btnKarte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKarte.Location = new System.Drawing.Point(12, 225);
+            this.btnKarte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnKarte.Location = new System.Drawing.Point(160, 54);
             this.btnKarte.Name = "btnKarte";
             this.btnKarte.Size = new System.Drawing.Size(120, 36);
             this.btnKarte.TabIndex = 12;
@@ -132,17 +103,51 @@
             this.btnKarte.UseVisualStyleBackColor = false;
             this.btnKarte.Click += new System.EventHandler(this.btnKarte_Click);
             // 
+            // btnKlijenti2
+            // 
+            this.btnKlijenti2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnKlijenti2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKlijenti2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.btnKlijenti2.FlatAppearance.BorderSize = 0;
+            this.btnKlijenti2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKlijenti2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnKlijenti2.Location = new System.Drawing.Point(12, 12);
+            this.btnKlijenti2.Name = "btnKlijenti2";
+            this.btnKlijenti2.Size = new System.Drawing.Size(120, 36);
+            this.btnKlijenti2.TabIndex = 14;
+            this.btnKlijenti2.TabStop = false;
+            this.btnKlijenti2.Text = "Klijenti";
+            this.btnKlijenti2.UseVisualStyleBackColor = false;
+            this.btnKlijenti2.Click += new System.EventHandler(this.btnKlijenti2_Click);
+            // 
+            // btnRezervacije2
+            // 
+            this.btnRezervacije2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnRezervacije2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRezervacije2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Window;
+            this.btnRezervacije2.FlatAppearance.BorderSize = 0;
+            this.btnRezervacije2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRezervacije2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnRezervacije2.Location = new System.Drawing.Point(12, 54);
+            this.btnRezervacije2.Name = "btnRezervacije2";
+            this.btnRezervacije2.Size = new System.Drawing.Size(120, 36);
+            this.btnRezervacije2.TabIndex = 15;
+            this.btnRezervacije2.TabStop = false;
+            this.btnRezervacije2.Text = "Rezervacije";
+            this.btnRezervacije2.UseVisualStyleBackColor = false;
+            this.btnRezervacije2.Click += new System.EventHandler(this.btnRezervacije2_Click);
+            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 274);
+            this.ClientSize = new System.Drawing.Size(297, 173);
+            this.Controls.Add(this.btnRezervacije2);
+            this.Controls.Add(this.btnKlijenti2);
             this.Controls.Add(this.btnKarte);
             this.Controls.Add(this.btnRacuni);
             this.Controls.Add(this.btnKategorije);
             this.Controls.Add(this.btnInfo);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnKlijenti);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -156,12 +161,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnKlijenti;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Button btnKategorije;
         private System.Windows.Forms.Button btnRacuni;
         private System.Windows.Forms.Button btnKarte;
+        private System.Windows.Forms.Button btnKlijenti2;
+        private System.Windows.Forms.Button btnRezervacije2;
     }
 }

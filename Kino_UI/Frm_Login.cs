@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Kino_DAL;
+
 namespace Kino_UI
 {
     public partial class Frm_Login : Form
     {
-        //DSKorisnici.KorisniksDataTable dtKorisnik = new DSKorisnici.KorisniksDataTable();
+        DSMenadzeri.MenadzeriDataTable dtMenadzer = new DSMenadzeri.MenadzeriDataTable();
         public Frm_Login()
         {
             InitializeComponent();
@@ -20,24 +22,23 @@ namespace Kino_UI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //dtKorisnik.Clear();
-            //if (txt_user.Text != "" && txt_pass.Text != "")
-            //{
-            //    int ver = DAKorisnici.ProvjeraKorisnika(txt_user.Text, txt_pass.Text);
+            dtMenadzer.Clear();
+            if (txtKorisnickoIme.Text != "" && txtLozinka.Text != "")
+            {
+                int menadzer = DAMenadzeri.ProvjeraKorisnika(txtKorisnickoIme.Text, txtLozinka.Text);
 
-
-            //    if (ver != 0)
-            //    {
-            //        this.DialogResult = DialogResult.OK;
-            //        this.Close();
-            //    }
-            //}
-            //else
-            //{
-            //    lbl_error.Visible = true;
-            //}
-            Frm_Main frm = new Frm_Main();            
-            frm.Show();
+                if (menadzer != 0)
+                {
+                    //this.DialogResult = DialogResult.OK;
+                    //this.Close();
+                    Frm_Main frm = new Frm_Main();
+                    frm.Show();
+                }                
+            }
+            else
+            {
+                lbl_error.Visible = true;
+            }           
             
         }
     }
