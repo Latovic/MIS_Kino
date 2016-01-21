@@ -48,6 +48,16 @@
     <Compile Include="DARacuni.cs" />
     <Compile Include="DARezervacije.cs" />
     <Compile Include="DAStavkeRacuna.cs" />
+    <Compile Include="DSKarte.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSKarte.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSKategorije.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSKategorije.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DSKlijenti.cs">
       <DependentUpon>DSKlijenti.xsd</DependentUpon>
     </Compile>
@@ -56,6 +66,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSKlijenti.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DSProizvodi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSProizvodi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSRacuni.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRacuni.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DSRezervacije.cs">
       <DependentUpon>DSRezervacije.xsd</DependentUpon>
     </Compile>
@@ -63,6 +83,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSRezervacije.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSStavkeRacuna.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSStavkeRacuna.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -73,6 +98,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="DSKarte.xsc">
+      <DependentUpon>DSKarte.xsd</DependentUpon>
+    </None>
+    <None Include="DSKarte.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSKarte.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSKarte.xss">
+      <DependentUpon>DSKarte.xsd</DependentUpon>
+    </None>
+    <None Include="DSKategorije.xsc">
+      <DependentUpon>DSKategorije.xsd</DependentUpon>
+    </None>
+    <None Include="DSKategorije.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSKategorije.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSKategorije.xss">
+      <DependentUpon>DSKategorije.xsd</DependentUpon>
+    </None>
     <None Include="DSKlijenti.xsc">
       <DependentUpon>DSKlijenti.xsd</DependentUpon>
     </None>
@@ -84,6 +131,28 @@
     <None Include="DSKlijenti.xss">
       <DependentUpon>DSKlijenti.xsd</DependentUpon>
     </None>
+    <None Include="DSProizvodi.xsc">
+      <DependentUpon>DSProizvodi.xsd</DependentUpon>
+    </None>
+    <None Include="DSProizvodi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSProizvodi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSProizvodi.xss">
+      <DependentUpon>DSProizvodi.xsd</DependentUpon>
+    </None>
+    <None Include="DSRacuni.xsc">
+      <DependentUpon>DSRacuni.xsd</DependentUpon>
+    </None>
+    <None Include="DSRacuni.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRacuni.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSRacuni.xss">
+      <DependentUpon>DSRacuni.xsd</DependentUpon>
+    </None>
     <None Include="DSRezervacije.xsc">
       <DependentUpon>DSRezervacije.xsd</DependentUpon>
     </None>
@@ -94,6 +163,17 @@
     </None>
     <None Include="DSRezervacije.xss">
       <DependentUpon>DSRezervacije.xsd</DependentUpon>
+    </None>
+    <None Include="DSStavkeRacuna.xsc">
+      <DependentUpon>DSStavkeRacuna.xsd</DependentUpon>
+    </None>
+    <None Include="DSStavkeRacuna.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSStavkeRacuna.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSStavkeRacuna.xss">
+      <DependentUpon>DSStavkeRacuna.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

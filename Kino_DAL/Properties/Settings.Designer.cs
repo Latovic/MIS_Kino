@@ -26,10 +26,21 @@ namespace Kino_DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=app.fit.ba,1433;Initial Catalog=db_MIS;Integrated Security=false;User ID=user_MIS;Password=password_mis1;MultipleActiveResultSets=true")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=si106;Integrated Security=True")]
         public string si106ConnectionString {
             get {
                 return ((string)(this["si106ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=\"app.fit.ba, 1433\";Initial Catalog=db_MIS;Persist Security Info=True;" +
+            "User ID=user_MIS;Password=password_mis1")]
+        public string db_MISConnectionString {
+            get {
+                return ((string)(this["db_MISConnectionString"]));
             }
         }
     }
