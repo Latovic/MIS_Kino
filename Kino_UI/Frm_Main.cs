@@ -49,5 +49,23 @@ namespace Kino_UI
         {
             MessageBox.Show("Menadžerska aplikacija za pregled poslovanja kina.\n \nAutori: \n \n -Adnan Jusić IB130094\n -Almin Latović IB130074\n -Ahmed Bumbul IB130041\n \nMostar, FIT, 2016.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void btnKategorije_Click(object sender, EventArgs e)
+        {
+            Frm_Kategorije frm = new Frm_Kategorije();
+            frm.ShowDialog();
+        }
+
+        private void btnRacuni_Click(object sender, EventArgs e)
+        {
+            Frm_Racuni frm = new Frm_Racuni();
+            frm.ShowDialog();
+        }
+
+        private void btnKarte_Click(object sender, EventArgs e)
+        {
+            Frm_Karta frm = new Frm_Karta();
+            frm.ShowDialog();
+        }
     }
 }
