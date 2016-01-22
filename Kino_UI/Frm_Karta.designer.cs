@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Karta));
             this.dgKarte = new System.Windows.Forms.DataGridView();
+            this.RezervacijaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imePrezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imePrezimeKlijenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KorisnickoIme = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazivDvorane = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_BrojKarti = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -38,13 +45,7 @@
             this.cbxFilm = new System.Windows.Forms.ComboBox();
             this.cBox3D = new System.Windows.Forms.CheckBox();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.RezervacijaId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imePrezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imePrezimeKlijenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KorisnickoIme = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazivDvorane = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnInfo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgKarte)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +74,56 @@
             this.dgKarte.Size = new System.Drawing.Size(596, 308);
             this.dgKarte.TabIndex = 2;
             this.dgKarte.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgKarte_CellDoubleClick);
+            // 
+            // RezervacijaId
+            // 
+            this.RezervacijaId.DataPropertyName = "RezervacijaId";
+            this.RezervacijaId.HeaderText = "RezervacijaId";
+            this.RezervacijaId.Name = "RezervacijaId";
+            this.RezervacijaId.ReadOnly = true;
+            this.RezervacijaId.Visible = false;
+            // 
+            // imePrezime
+            // 
+            this.imePrezime.DataPropertyName = "imePrezime";
+            this.imePrezime.HeaderText = "Zaposlenik";
+            this.imePrezime.Name = "imePrezime";
+            this.imePrezime.ReadOnly = true;
+            // 
+            // imePrezimeKlijenta
+            // 
+            this.imePrezimeKlijenta.DataPropertyName = "imePrezimeKlijenta";
+            this.imePrezimeKlijenta.HeaderText = "Klijent";
+            this.imePrezimeKlijenta.Name = "imePrezimeKlijenta";
+            this.imePrezimeKlijenta.ReadOnly = true;
+            // 
+            // Naziv
+            // 
+            this.Naziv.DataPropertyName = "nazivFilma";
+            this.Naziv.HeaderText = "Film";
+            this.Naziv.Name = "Naziv";
+            this.Naziv.ReadOnly = true;
+            // 
+            // KorisnickoIme
+            // 
+            this.KorisnickoIme.DataPropertyName = "Is3D";
+            this.KorisnickoIme.HeaderText = "3D";
+            this.KorisnickoIme.Name = "KorisnickoIme";
+            this.KorisnickoIme.ReadOnly = true;
+            // 
+            // nazivDvorane
+            // 
+            this.nazivDvorane.DataPropertyName = "nazivDvorane";
+            this.nazivDvorane.HeaderText = "Dvorana";
+            this.nazivDvorane.Name = "nazivDvorane";
+            this.nazivDvorane.ReadOnly = true;
+            // 
+            // Cijena
+            // 
+            this.Cijena.DataPropertyName = "Cijena";
+            this.Cijena.HeaderText = "Cijena";
+            this.Cijena.Name = "Cijena";
+            this.Cijena.ReadOnly = true;
             // 
             // lbl_BrojKarti
             // 
@@ -144,7 +195,7 @@
             // 
             // btnPrint
             // 
-            this.btnPrint.Location = new System.Drawing.Point(533, 351);
+            this.btnPrint.Location = new System.Drawing.Point(452, 351);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 23);
             this.btnPrint.TabIndex = 36;
@@ -152,61 +203,22 @@
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // RezervacijaId
+            // btnInfo
             // 
-            this.RezervacijaId.DataPropertyName = "RezervacijaId";
-            this.RezervacijaId.HeaderText = "RezervacijaId";
-            this.RezervacijaId.Name = "RezervacijaId";
-            this.RezervacijaId.ReadOnly = true;
-            this.RezervacijaId.Visible = false;
-            // 
-            // imePrezime
-            // 
-            this.imePrezime.DataPropertyName = "imePrezime";
-            this.imePrezime.HeaderText = "Zaposlenik";
-            this.imePrezime.Name = "imePrezime";
-            this.imePrezime.ReadOnly = true;
-            // 
-            // imePrezimeKlijenta
-            // 
-            this.imePrezimeKlijenta.DataPropertyName = "imePrezimeKlijenta";
-            this.imePrezimeKlijenta.HeaderText = "Klijent";
-            this.imePrezimeKlijenta.Name = "imePrezimeKlijenta";
-            this.imePrezimeKlijenta.ReadOnly = true;
-            // 
-            // Naziv
-            // 
-            this.Naziv.DataPropertyName = "nazivFilma";
-            this.Naziv.HeaderText = "Film";
-            this.Naziv.Name = "Naziv";
-            this.Naziv.ReadOnly = true;
-            // 
-            // KorisnickoIme
-            // 
-            this.KorisnickoIme.DataPropertyName = "Is3D";
-            this.KorisnickoIme.HeaderText = "3D";
-            this.KorisnickoIme.Name = "KorisnickoIme";
-            this.KorisnickoIme.ReadOnly = true;
-            // 
-            // nazivDvorane
-            // 
-            this.nazivDvorane.DataPropertyName = "nazivDvorane";
-            this.nazivDvorane.HeaderText = "Dvorana";
-            this.nazivDvorane.Name = "nazivDvorane";
-            this.nazivDvorane.ReadOnly = true;
-            // 
-            // Cijena
-            // 
-            this.Cijena.DataPropertyName = "Cijena";
-            this.Cijena.HeaderText = "Cijena";
-            this.Cijena.Name = "Cijena";
-            this.Cijena.ReadOnly = true;
+            this.btnInfo.Location = new System.Drawing.Point(533, 351);
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(75, 23);
+            this.btnInfo.TabIndex = 37;
+            this.btnInfo.Text = "Info";
+            this.btnInfo.UseVisualStyleBackColor = true;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
             // 
             // Frm_Karta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(620, 378);
+            this.Controls.Add(this.btnInfo);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.cBox3D);
             this.Controls.Add(this.label2);
@@ -245,5 +257,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Naziv;
         private System.Windows.Forms.DataGridViewTextBoxColumn imePrezimeKlijenta;
         private System.Windows.Forms.DataGridViewTextBoxColumn imePrezime;
+        private System.Windows.Forms.Button btnInfo;
     }
 }

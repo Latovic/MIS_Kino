@@ -88,5 +88,12 @@ namespace Kino_UI
             Frm_Karte frm = new Frm_Karte(rezervacijId);
             frm.ShowDialog();
         }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            int rezervacijId = Convert.ToInt32(dgKarte.SelectedRows[0].Cells[0].Value);
+            Frm_Karte frm = new Frm_Karte(rezervacijId);
+            frm.ShowDialog();
+        }
     }
 }
