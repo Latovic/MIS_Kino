@@ -180,7 +180,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Kategorije";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Kategorije";
+            this.Text = "Kategorije proizvoda";
             this.Load += new System.EventHandler(this.Frm_Kategorije_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgKategorije)).EndInit();
             this.ResumeLayout(false);
