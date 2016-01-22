@@ -81,5 +81,12 @@ namespace Kino_UI
             Reports.Frm_KarteReport frm = new Reports.Frm_KarteReport(dsKarte.Karte);
             frm.ShowDialog();
         }
+
+        private void dgKarte_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int rezervacijId = Convert.ToInt32(dgKarte.SelectedRows[0].Cells[0].Value);
+            Frm_Karte frm = new Frm_Karte(rezervacijId);
+            frm.ShowDialog();
+        }
     }
 }

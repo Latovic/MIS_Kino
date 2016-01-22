@@ -244,7 +244,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Racuni";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Racuni";
+            this.Text = "Računi";
             this.Load += new System.EventHandler(this.Frm_Racuni_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgRacuni)).EndInit();
             this.ResumeLayout(false);
