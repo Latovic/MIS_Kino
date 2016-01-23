@@ -271,6 +271,7 @@
             this.Controls.Add(this.dateTimeOd);
             this.Controls.Add(this.dgProjekcije);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Frm_Projekcije";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Projekcije";

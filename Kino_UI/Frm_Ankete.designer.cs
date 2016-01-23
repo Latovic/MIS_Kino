@@ -172,6 +172,7 @@
             this.Controls.Add(this.lblPitanje);
             this.Controls.Add(this.dgAnkete);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Frm_Ankete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ankete";

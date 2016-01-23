@@ -91,11 +91,11 @@ namespace Kino_UI
             frm.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        
+
+        private void dgKlijenti_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //int klijentId = Convert.ToInt32(dgKlijenti.SelectedRows[0].Cells[0].Value);
-            //Frm_KlijentProfil frm = new Frm_KlijentProfil(klijentId);
-            //frm.ShowDialog();
+            btnPregledRezervacija_Click(null,null);
         }
     }
 }

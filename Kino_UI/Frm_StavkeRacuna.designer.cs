@@ -173,6 +173,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgStavkeRacuna);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Frm_StavkeRacuna";
             this.Text = "Stavke računa";
             this.Load += new System.EventHandler(this.Frm_Racun_Load);

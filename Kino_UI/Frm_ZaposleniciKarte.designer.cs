@@ -221,6 +221,7 @@
             this.Controls.Add(this.lblBrojKarata);
             this.Controls.Add(this.dgKarte);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimizeBox = false;
             this.Name = "Frm_ZaposleniciKarte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Zaposlenik - Prodate karte";

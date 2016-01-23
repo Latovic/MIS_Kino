@@ -77,6 +77,7 @@
             this.dgKlijenti.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgKlijenti.Size = new System.Drawing.Size(682, 415);
             this.dgKlijenti.TabIndex = 0;
+            this.dgKlijenti.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgKlijenti_CellContentDoubleClick);
             // 
             // KlijentId
             // 
