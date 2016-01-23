@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_Ankete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Ankete.designer.cs">
+      <DependentUpon>Frm_Ankete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Filmovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Filmovi.designer.cs">
+      <DependentUpon>Frm_Filmovi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Karta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,12 @@
     <Compile Include="Frm_Proizvodi.designer.cs">
       <DependentUpon>Frm_Proizvodi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Projekcije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Projekcije.designer.cs">
+      <DependentUpon>Frm_Projekcije.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Racuni.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,14 +127,38 @@
     <Compile Include="Frm_Rezervacije.Designer.cs">
       <DependentUpon>Frm_Rezervacije.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_RezultatiAnkete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_RezultatiAnkete.designer.cs">
+      <DependentUpon>Frm_RezultatiAnkete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_StavkeRacuna.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_StavkeRacuna.designer.cs">
       <DependentUpon>Frm_StavkeRacuna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Zaposlenici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Zaposlenici.designer.cs">
+      <DependentUpon>Frm_Zaposlenici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ZaposleniciKarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ZaposleniciKarte.designer.cs">
+      <DependentUpon>Frm_ZaposleniciKarte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\Frm_FilmoviReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Frm_FilmoviReport.designer.cs">
+      <DependentUpon>Frm_FilmoviReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Frm_KarteReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +195,12 @@
     <Compile Include="Reports\Frm_ProizvodiReport.designer.cs">
       <DependentUpon>Frm_ProizvodiReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Frm_ProjekcijeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Frm_ProjekcijeReport.designer.cs">
+      <DependentUpon>Frm_ProjekcijeReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Frm_RacuniReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,12 +213,30 @@
     <Compile Include="Reports\Frm_Rezervacije_Report.Designer.cs">
       <DependentUpon>Frm_Rezervacije_Report.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Frm_RezultatiAnketeReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Frm_RezultatiAnketeReport.designer.cs">
+      <DependentUpon>Frm_RezultatiAnketeReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Frm_StavkeRacunaReport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reports\Frm_StavkeRacunaReport.designer.cs">
       <DependentUpon>Frm_StavkeRacunaReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Frm_ZaposleniciReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Frm_ZaposleniciReport.designer.cs">
+      <DependentUpon>Frm_ZaposleniciReport.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frm_Ankete.resx">
+      <DependentUpon>Frm_Ankete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Filmovi.resx">
+      <DependentUpon>Frm_Filmovi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Karta.resx">
       <DependentUpon>Frm_Karta.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,14 +261,26 @@
     <EmbeddedResource Include="Frm_Proizvodi.resx">
       <DependentUpon>Frm_Proizvodi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Projekcije.resx">
+      <DependentUpon>Frm_Projekcije.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Racuni.resx">
       <DependentUpon>Frm_Racuni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Rezervacije.resx">
       <DependentUpon>Frm_Rezervacije.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_RezultatiAnkete.resx">
+      <DependentUpon>Frm_RezultatiAnkete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_StavkeRacuna.resx">
       <DependentUpon>Frm_StavkeRacuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Zaposlenici.resx">
+      <DependentUpon>Frm_Zaposlenici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ZaposleniciKarte.resx">
+      <DependentUpon>Frm_ZaposleniciKarte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -214,6 +292,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reports\Frm_FilmoviReport.resx">
+      <DependentUpon>Frm_FilmoviReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Frm_KarteReport.resx">
       <DependentUpon>Frm_KarteReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,23 +313,36 @@
     <EmbeddedResource Include="Reports\Frm_ProizvodiReport.resx">
       <DependentUpon>Frm_ProizvodiReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Frm_ProjekcijeReport.resx">
+      <DependentUpon>Frm_ProjekcijeReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Frm_RacuniReport.resx">
       <DependentUpon>Frm_RacuniReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Frm_Rezervacije_Report.resx">
       <DependentUpon>Frm_Rezervacije_Report.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Frm_RezultatiAnketeReport.resx">
+      <DependentUpon>Frm_RezultatiAnketeReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Frm_StavkeRacunaReport.resx">
       <DependentUpon>Frm_StavkeRacunaReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Frm_ZaposleniciReport.resx">
+      <DependentUpon>Frm_ZaposleniciReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptFilmovi.rdlc" />
     <EmbeddedResource Include="Reports\rptKarta.rdlc" />
     <EmbeddedResource Include="Reports\rptKarte.rdlc" />
     <EmbeddedResource Include="Reports\rptKategorije.rdlc" />
     <EmbeddedResource Include="Reports\rptProizvodi.rdlc" />
+    <EmbeddedResource Include="Reports\rptProjekcije.rdlc" />
     <EmbeddedResource Include="Reports\rptRacuni.rdlc" />
     <EmbeddedResource Include="Reports\rptRezervacije.rdlc" />
     <EmbeddedResource Include="Reports\rptKlijenti.rdlc" />
+    <EmbeddedResource Include="Reports\rptRezultatiAnkete.rdlc" />
     <EmbeddedResource Include="Reports\rptStavkeRacuna.rdlc" />
+    <EmbeddedResource Include="Reports\rptZaposlenici.rdlc" />
     <EmbeddedResource Include="Reports\rpt_Klijenti_Registracije.rdlc" />
     <None Include="Properties\DataSources\Kino_DAL.DSKlijenti.datasource" />
     <None Include="Properties\DataSources\Kino_DAL.DSRezervacije.datasource" />

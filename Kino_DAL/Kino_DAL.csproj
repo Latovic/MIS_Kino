@@ -41,14 +41,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
+    <Compile Include="DAAnkete.cs" />
+    <Compile Include="DAFilmovi.cs" />
     <Compile Include="DAKarte.cs" />
     <Compile Include="DAKategorije.cs" />
     <Compile Include="DAKlijenti.cs" />
     <Compile Include="DAMenadzeri.cs" />
     <Compile Include="DAProizvodi.cs" />
+    <Compile Include="DAProjekcije.cs" />
     <Compile Include="DARacuni.cs" />
     <Compile Include="DARezervacije.cs" />
     <Compile Include="DAStavkeRacuna.cs" />
+    <Compile Include="DAZaposlenici.cs" />
+    <Compile Include="DSAnkete.cs">
+      <DependentUpon>DSAnkete.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSAnkete.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAnkete.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSFilmovi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFilmovi.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DSKarte.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -77,6 +94,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSProizvodi.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DSProjekcije.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSProjekcije.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DSRacuni.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -95,6 +117,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSStavkeRacuna.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DSZaposlenici.cs">
+      <DependentUpon>DSZaposlenici.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSZaposlenici.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSZaposlenici.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -104,6 +134,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="DSAnkete.xsc">
+      <DependentUpon>DSAnkete.xsd</DependentUpon>
+    </None>
+    <None Include="DSAnkete.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAnkete.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSAnkete.xss">
+      <DependentUpon>DSAnkete.xsd</DependentUpon>
+    </None>
+    <None Include="DSFilmovi.xsc">
+      <DependentUpon>DSFilmovi.xsd</DependentUpon>
+    </None>
+    <None Include="DSFilmovi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFilmovi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSFilmovi.xss">
+      <DependentUpon>DSFilmovi.xsd</DependentUpon>
+    </None>
     <None Include="DSKarte.xsc">
       <DependentUpon>DSKarte.xsd</DependentUpon>
     </None>
@@ -159,6 +211,17 @@
     <None Include="DSProizvodi.xss">
       <DependentUpon>DSProizvodi.xsd</DependentUpon>
     </None>
+    <None Include="DSProjekcije.xsc">
+      <DependentUpon>DSProjekcije.xsd</DependentUpon>
+    </None>
+    <None Include="DSProjekcije.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSProjekcije.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSProjekcije.xss">
+      <DependentUpon>DSProjekcije.xsd</DependentUpon>
+    </None>
     <None Include="DSRacuni.xsc">
       <DependentUpon>DSRacuni.xsd</DependentUpon>
     </None>
@@ -191,6 +254,17 @@
     </None>
     <None Include="DSStavkeRacuna.xss">
       <DependentUpon>DSStavkeRacuna.xsd</DependentUpon>
+    </None>
+    <None Include="DSZaposlenici.xsc">
+      <DependentUpon>DSZaposlenici.xsd</DependentUpon>
+    </None>
+    <None Include="DSZaposlenici.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSZaposlenici.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSZaposlenici.xss">
+      <DependentUpon>DSZaposlenici.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

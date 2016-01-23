@@ -11,7 +11,7 @@ namespace Kino_DAL
     {
         public static SqlConnection GetConnection()
         {
-            SqlConnection cn = new SqlConnection(Properties.Settings.Default.si106ConnectionString);
+            SqlConnection cn = new SqlConnection(Properties.Settings.Default.db_MISConnectionString);
             cn.Open();
             return cn;
         }

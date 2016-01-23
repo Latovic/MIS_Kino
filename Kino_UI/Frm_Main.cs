@@ -79,5 +79,23 @@ namespace Kino_UI
             Frm_Rezervacije frm = new Frm_Rezervacije();
             frm.ShowDialog();
         }
+
+        private void btnZaposlenici_Click(object sender, EventArgs e)
+        {
+            Frm_Zaposlenici frm = new Frm_Zaposlenici();
+            frm.ShowDialog();
+        }
+
+        private void btnFilmovi_Click(object sender, EventArgs e)
+        {
+            Frm_Filmovi frm = new Frm_Filmovi();
+            frm.ShowDialog();
+        }
+
+        private void btnAnkete_Click(object sender, EventArgs e)
+        {
+            Frm_Ankete frm = new Frm_Ankete();
+            frm.ShowDialog();
+        }
     }
 }
