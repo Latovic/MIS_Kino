@@ -175,6 +175,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Frm_StavkeRacuna";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stavke računa";
             this.Load += new System.EventHandler(this.Frm_Racun_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgStavkeRacuna)).EndInit();
